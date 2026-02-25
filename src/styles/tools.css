@@ -1,0 +1,231 @@
+/* ─── Tool-specific styles ─── */
+
+/* Conversion Tabs */
+.conversion-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+/* Data cleaner toggles */
+.toggle-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    cursor: pointer;
+    padding: 0.4rem 0.75rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+    transition: var(--transition);
+    margin: 0;
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: normal;
+}
+
+.toggle-label:hover {
+    border-color: var(--border-accent);
+    color: var(--text-primary);
+}
+
+.toggle-label input {
+    accent-color: var(--accent);
+    cursor: pointer;
+}
+
+/* Password output */
+.pwd-output-wrap {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.pwd-output-field {
+    font-family: var(--font-mono);
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    flex: 1;
+    color: var(--text-primary);
+}
+
+/* Strength bar */
+.strength-bar-wrap {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.strength-bar-track {
+    flex: 1;
+    height: 6px;
+    background: var(--border);
+    border-radius: 99px;
+    overflow: hidden;
+}
+
+.strength-bar-fill {
+    height: 100%;
+    border-radius: 99px;
+    transition: width 0.4s ease, background 0.4s ease;
+    width: 0%;
+}
+
+.strength-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    min-width: 55px;
+    text-align: right;
+}
+
+/* Batch password rows */
+.batch-pwd-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-sm);
+    padding: 0.6rem;
+    border-radius: var(--radius-sm);
+    transition: var(--transition);
+}
+
+.batch-pwd-row:hover {
+    background: var(--bg-card-hover);
+}
+
+.pwd-code {
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    color: var(--text-primary);
+    word-break: break-all;
+}
+
+/* Diff Checker */
+.diff-legend {
+    display: flex;
+    gap: var(--space-md);
+    padding: var(--space-md) var(--space-lg);
+    border-bottom: 1px solid var(--border);
+    font-size: 0.8rem;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--text-secondary);
+}
+
+.diff-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+}
+
+.diff-table thead th {
+    padding: 0.5rem 1rem;
+    text-align: left;
+    background: var(--bg-card-hover);
+    color: var(--text-secondary);
+    font-weight: 600;
+    border-bottom: 1px solid var(--border);
+    font-family: var(--font);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.diff-table tbody tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.diff-table td {
+    padding: 0.3rem 1rem;
+    vertical-align: top;
+}
+
+.line-num {
+    color: var(--text-muted);
+    text-align: right;
+    user-select: none;
+    min-width: 36px;
+    padding-right: 0.75rem;
+    font-size: 0.75rem;
+}
+
+.diff-cell {
+    white-space: pre-wrap;
+    word-break: break-all;
+    color: var(--text-primary);
+}
+
+.diff-added {
+    background: rgba(34, 211, 165, 0.07);
+}
+
+.diff-removed {
+    background: rgba(255, 85, 119, 0.07);
+}
+
+.diff-changed {
+    background: rgba(255, 209, 102, 0.07);
+}
+
+.diff-added .diff-cell {
+    color: var(--green);
+}
+
+.diff-removed .diff-cell {
+    color: var(--red);
+}
+
+mark.diff-char-add {
+    background: rgba(34, 211, 165, 0.3);
+    color: var(--green);
+    border-radius: 2px;
+}
+
+mark.diff-char-del {
+    background: rgba(255, 85, 119, 0.3);
+    color: var(--red);
+    border-radius: 2px;
+}
+
+/* Hero stats */
+.hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-2xl);
+    flex-wrap: wrap;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-num {
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+    background: var(--gradient-accent);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+/* Range slider */
+input[type=range] {
+    padding: 0.25rem 0;
+    cursor: pointer;
+    accent-color: var(--accent);
+}
