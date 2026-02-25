@@ -1,0 +1,17 @@
+{
+  "name": "textforge",
+  "version": "1.0.0",
+  "description": "TextForge — Smart Text & Data Tools powered by AI",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": ["text-tools", "data-tools", "ai", "vite"],
+  "author": "zakooi",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^7.3.1"
+  }
+}
