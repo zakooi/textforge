@@ -10,6 +10,7 @@ import { renderFormatConverter } from './tools/format-converter.js';
 import { renderDataCleaner } from './tools/data-cleaner.js';
 import { renderPasswordGenerator } from './tools/password-generator.js';
 import { renderDiffChecker } from './tools/diff-checker.js';
+import { renderAiRewriter } from './tools/ai-rewriter.js';
 
 // Build layout
 const app = document.getElementById('app');
@@ -28,6 +29,7 @@ addRoute('/tools/format-converter', renderFormatConverter);
 addRoute('/tools/data-cleaner', renderDataCleaner);
 addRoute('/tools/password', renderPasswordGenerator);
 addRoute('/tools/diff-checker', renderDiffChecker);
+addRoute('/tools/ai-rewriter', renderAiRewriter);
 addRoute('404', (el) => {
   el.innerHTML = `
     <div class="container" style="text-align:center;padding:var(--space-2xl) 0">

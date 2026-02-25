@@ -7,6 +7,24 @@
     gap: 0.4rem;
 }
 
+.btn-tab {
+    background: transparent;
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+}
+
+.btn-tab:hover {
+    background: var(--bg-card);
+    color: var(--text-primary);
+}
+
+.btn-tab.active {
+    background: var(--gradient-accent);
+    color: white;
+    border-color: transparent;
+    box-shadow: 0 4px 15px var(--accent-glow);
+}
+
 /* Data cleaner toggles */
 .toggle-label {
     display: flex;

@@ -1,16 +1,17 @@
 import { navigate } from '../router.js';
 
 const TOOLS = [
-    { href: '/tools/format-converter', icon: '🔄', label: 'Format Converter' },
-    { href: '/tools/data-cleaner', icon: '📊', label: 'Data Cleaner' },
-    { href: '/tools/password', icon: '🔐', label: 'Password' },
-    { href: '/tools/diff-checker', icon: '📋', label: 'Diff Checker' },
+  { href: '/tools/format-converter', icon: '🔄', label: 'Format Converter' },
+  { href: '/tools/data-cleaner', icon: '📊', label: 'Data Cleaner' },
+  { href: '/tools/password', icon: '🔐', label: 'Password' },
+  { href: '/tools/diff-checker', icon: '📋', label: 'Diff Checker' },
+  { href: '/tools/ai-rewriter', icon: '✨', label: 'AI Rewriter' },
 ];
 
 export function createHeader() {
-    const header = document.createElement('header');
-    header.className = 'site-header';
-    header.innerHTML = `
+  const header = document.createElement('header');
+  header.className = 'site-header';
+  header.innerHTML = `
     <div class="container header-inner">
       <a href="/" data-link class="logo">
         <span class="logo-icon">⚡</span>
@@ -26,10 +27,10 @@ export function createHeader() {
     </div>
   `;
 
-    // Mobile menu toggle
-    header.querySelector('#menuToggle')?.addEventListener('click', () => {
-        header.querySelector('#mobileNav')?.classList.toggle('open');
-    });
+  // Mobile menu toggle
+  header.querySelector('#menuToggle')?.addEventListener('click', () => {
+    header.querySelector('#mobileNav')?.classList.toggle('open');
+  });
 
-    return header;
+  return header;
 }

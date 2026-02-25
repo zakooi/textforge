@@ -2,46 +2,55 @@ import { navigate } from '../router.js';
 import { createHeader } from '../components/header.js';
 
 const TOOLS = [
-    {
-        href: '/tools/format-converter',
-        icon: '🔄',
-        title: 'Format Converter',
-        desc: 'Convert between JSON, CSV, YAML, and XML instantly. All-in-one, no size limit.',
-        badge: 'Popular',
-        badgeType: 'purple',
-        delay: '0ms',
-    },
-    {
-        href: '/tools/data-cleaner',
-        icon: '📊',
-        title: 'Data Cleaner',
-        desc: 'Remove duplicate lines, sort data, trim whitespace, and filter text with one click.',
-        badge: 'Utility',
-        badgeType: 'blue',
-        delay: '80ms',
-    },
-    {
-        href: '/tools/password',
-        icon: '🔐',
-        title: 'Password Generator',
-        desc: 'Generate strong, memorable passwords with strength meter and crack-time estimate.',
-        badge: 'Security',
-        badgeType: 'green',
-        delay: '160ms',
-    },
-    {
-        href: '/tools/diff-checker',
-        icon: '📋',
-        title: 'Diff Checker',
-        desc: 'Compare two texts side-by-side with highlighted differences and line numbers.',
-        badge: 'Comparison',
-        badgeType: 'yellow',
-        delay: '240ms',
-    },
+  {
+    href: '/tools/format-converter',
+    icon: '🔄',
+    title: 'Format Converter',
+    desc: 'Convert between JSON, CSV, YAML, and XML instantly. All-in-one, no size limit.',
+    badge: 'Popular',
+    badgeType: 'purple',
+    delay: '0ms',
+  },
+  {
+    href: '/tools/data-cleaner',
+    icon: '📊',
+    title: 'Data Cleaner',
+    desc: 'Remove duplicate lines, sort data, trim whitespace, and filter text with one click.',
+    badge: 'Utility',
+    badgeType: 'blue',
+    delay: '80ms',
+  },
+  {
+    href: '/tools/password',
+    icon: '🔐',
+    title: 'Password Generator',
+    desc: 'Generate strong, memorable passwords with strength meter and crack-time estimate.',
+    badge: 'Security',
+    badgeType: 'green',
+    delay: '160ms',
+  },
+  {
+    href: '/tools/diff-checker',
+    icon: '📋',
+    title: 'Diff Checker',
+    desc: 'Compare two texts side-by-side with highlighted differences and line numbers.',
+    badge: 'Comparison',
+    badgeType: 'yellow',
+    delay: '240ms',
+  },
+  {
+    href: '/tools/ai-rewriter',
+    icon: '✨',
+    title: 'AI Text Rewriter',
+    desc: 'Rewrite, improve, or change the tone of your text using powerful AI models.',
+    badge: 'New & AI',
+    badgeType: 'purple',
+    delay: '300ms',
+  },
 ];
 
 export function renderHome(container) {
-    container.innerHTML = `
+  container.innerHTML = `
     <section class="hero">
       <div class="container">
         <div class="hero-badge">⚡ Free · No login · No ads</div>
